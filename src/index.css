@@ -480,6 +480,68 @@ input::placeholder, textarea::placeholder {
   .floating-element {
     display: none;
   }
+
+  /* Mobile navbar specific styles */
+  nav {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  /* Ensure mobile menu is properly positioned */
+  .mobile-menu {
+    position: fixed !important;
+    top: 80px !important;
+    left: 10px !important;
+    right: 10px !important;
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+  }
+
+  /* Hide desktop navbar on mobile */
+  .desktop-navbar {
+    display: none !important;
+  }
+
+  /* Show mobile navbar on mobile */
+  .mobile-navbar {
+    display: flex !important;
+  }
+}
+
+/* Additional mobile breakpoints */
+@media (max-width: 480px) {
+  .container {
+    padding: 0.8em;
+  }
+  
+  .card {
+    padding: 1.2em;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  .btn {
+    padding: 0.5em 1em;
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0.5em;
+  }
+  
+  .card {
+    padding: 1em;
+  }
+  
+  h1 {
+    font-size: 1.6em;
+  }
 }
 
 /* Selection styling */
