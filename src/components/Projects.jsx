@@ -422,8 +422,8 @@ const Projects = () => {
           }
         }
       `}</style>
-    </section>
-  );
+  </section>
+);
 };
 
 export default Projects;
